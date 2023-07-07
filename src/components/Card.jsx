@@ -1,11 +1,11 @@
-import './Card.css';
+import styles from './Card.module.css';
 import PropTypes from 'prop-types';
 
 function Card({name, price, img}) {
   return (
-    <div className="product">
+    <div className={styles.product}>
       <img src={img} alt={name + 'Image'} title={name} />
-      <div className="info">
+      <div className={styles.info}>
         <p>{name} <br /> Precio: ${price}</p>
       </div>
     </div>
