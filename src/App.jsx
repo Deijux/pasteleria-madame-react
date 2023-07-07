@@ -12,7 +12,7 @@ function App() {
         <Card name={adornos.name} img={adornos.img} price={adornos.price} key={adornos.id} />
     ));
     return (
-        <>
+        <main className={styles.main}>
             <Header />
             <div className={styles.bienvenida}>
                 <h1>¿Que pastel <br /> quieres hoy?</h1>
@@ -141,7 +141,7 @@ function App() {
                     </div>
                 </div>
             </div>
-        </>
+        </main>
     )
 }
 
