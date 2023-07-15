@@ -1,18 +1,27 @@
 import { useForm } from "react-hook-form";
 import styles from "./FormOrder.module.css";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 function FormOrder() {
-
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-  }
+    const MySwal = withReactContent(Swal);
+    MySwal.fire({
+      title: <strong>Pronto tendrás tu pastel de {data.sabor} en tus manos {data.nombre}!</strong>,
+      text: 'Nos pondremos en contacto contigo',
+      icon: "success",
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+      confirmButtonColor: '#'
+    });
+  };
 
   return (
     <section className={styles.formulario}>
       <p>Haz tu pedido</p>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
         <div className={styles.filasform}>
           <div className={styles.filasform1}>
             <div className={styles.inputs}>
@@ -56,21 +65,47 @@ function FormOrder() {
                 <div className={styles.sabores}>
                   <p>Sabores</p>
                   <label>
-                    <input type="radio" name="sabor" value="vainilla" {...register("sabor")} />
+                    <input
+                      type="radio"
+                      name="sabor"
+                      value="vainilla"
+                      {...register("sabor")}
+                      required
+                    />
                     Vainilla
                   </label>
                   <br />
                   <label>
-                    <input type="radio" name="sabor" value="chocolate" {...register("sabor")} />
+                    <input
+                      type="radio"
+                      name="sabor"
+                      value="chocolate"
+                      {...register("sabor")}
+                      required
+                    />
                     Chocolate
                   </label>
                   <br />
                   <label>
-                    <input type="radio" name="sabor" value="fresa" {...register("sabor")} /> Fresa
+                    <input
+                      type="radio"
+                      name="sabor"
+                      value="fresa"
+                      {...register("sabor")}
+                      required
+                    />
+                    Fresa
                   </label>
                   <br />
                   <label>
-                    <input type="radio" name="sabor" value="limón" {...register("sabor")} /> Limón
+                    <input
+                      type="radio"
+                      name="sabor"
+                      value="limón"
+                      {...register("sabor")}
+                      required
+                    />
+                    Limón
                   </label>
                 </div>
                 <div className={styles.cubierta}>
@@ -135,7 +170,7 @@ function FormOrder() {
             </div>
           </div>
         </div>
-        <button type="submit">Hacer pedido</button>
+        <button className={styles.button} type="submit">Hacer pedido</button>
       </form>
     </section>
   );
