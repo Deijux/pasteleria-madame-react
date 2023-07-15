@@ -3,6 +3,7 @@ import Header from './components/Header'
 import pasteles from './data/pasteles'
 import adornos from './data/adornos'
 import Card from './components/Card'
+import FormOrder from './components/FormOrder'
 
 function App() {
     const pastelList = pasteles.map((pastel) => (
@@ -41,75 +42,7 @@ function App() {
                     </div>
                 </section>
             </div>
-            <section className={styles.formulario}>
-                <p>Haz tu pedido</p>
-                <form action="#" method="post">
-                    <div className={styles.filasform}>
-                        <div className={styles.filasform1}>
-                            <div className={styles.inputs}>
-                                <p>Nombre:</p>
-                                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre aquí" required />
-                            </div>
-                            <div className={styles.inputs}>
-                                <p>Teléfono:</p>
-                                <input type="text" name='telefono' id='telefono' placeholder='Tu teléfono aquí' required />
-                            </div>
-                            <div className={styles.inputs}>
-                                <p>Correo electrónico:</p>
-                                <input type="email" name='email' id='email' placeholder='Tu correo aquí' required />
-                            </div>
-                        </div>
-                        <div className={styles.filasform2}>
-                            <div className={styles.inputs}>
-                                <p>Selección:</p>
-                                <div className={styles.seleccion}>
-                                    <div className={styles.sabores}>
-                                        <p>Sabores</p>
-                                        <label>
-                                            <input type="radio" name="sabor" value="vainilla" /> Vainilla
-                                        </label>
-                                        <br />
-                                        <label>
-                                            <input type="radio" name="sabor" value="chocolate" /> Chocolate
-                                        </label>
-                                        <br />
-                                        <label>
-                                            <input type="radio" name="sabor" value="fresa" /> Fresa
-                                        </label>
-                                        <br />
-                                        <label>
-                                            <input type="radio" name="sabor" value="limón" /> Limón
-                                        </label>
-                                    </div>
-                                    <div className={styles.cubierta}>
-                                        <p>Cubierta</p>
-                                        <input type="checkbox" name="caramelo" id="caramelo" value="caramelo" />
-                                        <label htmlFor="caramelo">Caramelo</label>
-                                        <br />
-                                        <input type="checkbox" name="frutas" id="frutas" value="frutas" />
-                                        <label htmlFor="frutas">Frutas</label>
-                                        <br />
-                                        <input type="checkbox" name="fondat" id="fondat" value="fondat" />
-                                        <label htmlFor="fondat">Fondat</label>
-                                        <br />
-                                        <input type="checkbox" name="chantilly" id="chantilly" value="chantilly" />
-                                        <label htmlFor="chantilly">Chantilly</label>
-                                        <br />
-                                        <input type="checkbox" name="merengue" id="merengue" value="merengue" />
-                                        <label htmlFor="merengue">Merengue</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={styles.inputs}>
-                                <p>Descripción:</p>
-                                <textarea className="description" name="description" id="description"
-                                    placeholder="Descripción del pastel" required></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit">Hacer pedido</button>
-                </form>
-            </section>
+            <FormOrder />
             <footer>
                 <h2>Encuentranos</h2>
                 <div className={styles.datos}>
