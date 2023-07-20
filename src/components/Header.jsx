@@ -5,12 +5,12 @@ function Header() {
   return (
     <header>
       <Link to="/">
-        <img src="https://raw.githubusercontent.com/Deijux/pasteleria-madame/main/img/logoHeader.webp" alt='Logo Madame Image' />
+        <img src="https://res.cloudinary.com/dh3ixolct/image/upload/v1689869082/others/n8mehsst5nvhq3aobxhd.webp" alt='Logo Madame Image' />
       </Link>
       <div className={styles.headright}>
         <Link to="/sobre-nosotros">Sobre Nosotros</Link>
         <Link to="/login">
-          <img src="https://raw.githubusercontent.com/Deijux/pasteleria-madame/main/img/Usuario.webp" alt='Logo Usuario Image' />
+          <img src="https://res.cloudinary.com/dh3ixolct/image/upload/v1689869082/others/lvrfquiidtgvxe3wgw3f.webp" alt='Logo Usuario Image' />
         </Link>
       </div>
     </header>

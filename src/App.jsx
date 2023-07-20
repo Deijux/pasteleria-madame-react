@@ -17,7 +17,7 @@ function App() {
             <Header />
             <div className={styles.bienvenida}>
                 <h1>¿Que pastel <br /> quieres hoy?</h1>
-                <img src="https://raw.githubusercontent.com/Deijux/pasteleria-madame/main/img/PastelInicioPage.webp" alt="Pastel Inicio" />
+                <img src="https://res.cloudinary.com/dh3ixolct/image/upload/v1689869082/others/gsstbvrw3h0q4syufpyu.webp" alt="Pastel Inicio" />
             </div>
             <div className={styles.txtcatalogo}>
                 <h2>Este es nuestro catalogo</h2>
