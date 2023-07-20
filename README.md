@@ -1,4 +1,4 @@
-# Proyecto Pastelería Madame (Rama Experimental)
+# Proyecto Pastelería Madame
 
 Proyecto realizado desde 0 diseñado en Figma y desarrollado en React totalmente responsive.
 
