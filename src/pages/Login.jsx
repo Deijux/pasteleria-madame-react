@@ -27,7 +27,7 @@ function Login() {
           </form>
         </div>
         <div className={styles.containerlogo}>
-          <img src="https://raw.githubusercontent.com/Deijux/pasteleria-madame/main/img/logoHeader.webp" srcSet="" />
+          <img src="https://res.cloudinary.com/dh3ixolct/image/upload/v1689869082/others/n8mehsst5nvhq3aobxhd.webp" srcSet="" />
           <p>Inicie sesión para administrar los pedidos de la pastelería Madame</p>
         </div>
       </section>
