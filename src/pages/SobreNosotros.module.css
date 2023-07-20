@@ -1,10 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Heebo:wght@300;400&display=swap");
+@font-face {
+  font-family: 'Dancing-Script';
+  src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Heebo';
+  src: url(./fonts/Heebo/static/Heebo-Light.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
 
 :root {
   --color-prin: #f85183;
   --color-font: #fff;
   --color-cajas: #ff7da4;
-  --font-title: "Dancing Script", cursive;
+  --font-title: "Dancing-Script", cursive;
 }
 
 .bienvenida {
