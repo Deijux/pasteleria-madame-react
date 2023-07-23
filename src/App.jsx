@@ -57,7 +57,7 @@ function App() {
                     <i className="fi fi-rr-info"></i>
                 </div>
                 <div className={styles.wrapper}>
-                    <img src="https://raw.githubusercontent.com/Deijux/pasteleria-madame/main/img/PicCreator.webp" alt="Picture Creator" />
+                    <img src="https://res.cloudinary.com/dh3ixolct/image/upload/v1689869081/others/inkumhaugftil2nrs0bg.webp" alt="Picture Creator" />
                     <div className={styles.textCreator}>
                         <p>Creado por @iamdeijux </p>
                         <div className={styles.iconsLinks}>
