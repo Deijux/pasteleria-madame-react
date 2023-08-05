@@ -4,6 +4,7 @@ import pasteles from "./data/pasteles";
 import adornos from "./data/adornos";
 import Card from "./components/Card";
 import FormOrder from "./components/FormOrder";
+import Footer from "./components/Footer";
 
 function App() {
   const pastelList = pasteles.map((pastel) => (
@@ -54,14 +55,7 @@ function App() {
         </section>
       </div>
       <FormOrder />
-      <footer>
-        <h2>Encuentranos</h2>
-        <div className={styles.datos}>
-          <p>Dirección: Ibagué - Tolima</p>
-          <p>Teléfono: ##########</p>
-          <p>Horario: Lun - Sab - 7:00 AM - 6:00 PM</p>
-        </div>
-      </footer>
+      <Footer />
       <div className={styles.barraInfo}>
         <div className={styles.barraText}>
           <p>Esto es un proyecto personal</p>
