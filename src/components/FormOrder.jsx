@@ -9,12 +9,16 @@ function FormOrder() {
   const onSubmit = (data) => {
     const MySwal = withReactContent(Swal);
     MySwal.fire({
-      title: <strong>Pronto tendrás tu pastel de {data.sabor} en tus manos {data.nombre}!</strong>,
-      text: 'Nos pondremos en contacto contigo',
+      title: (
+        <strong>
+          Pronto tendrás tu pastel de {data.sabor} en tus manos {data.nombre}!
+        </strong>
+      ),
+      text: "Nos pondremos en contacto contigo",
       icon: "success",
       allowOutsideClick: false,
       allowEscapeKey: false,
-      confirmButtonColor: '#'
+      confirmButtonColor: "#",
     });
   };
 
@@ -170,7 +174,9 @@ function FormOrder() {
             </div>
           </div>
         </div>
-        <button className={styles.button} type="submit">Hacer pedido</button>
+        <button className={styles.button} type="submit">
+          Hacer pedido
+        </button>
       </form>
     </section>
   );

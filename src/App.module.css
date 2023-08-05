@@ -120,18 +120,6 @@ footer > h2 {
   text-align: center;
 }
 
-.datos {
-  background-color: var(--color-prin);
-  padding: 10px 0px;
-}
-
-.datos p {
-  color: var(--color-font);
-  font-family: "Heebo", sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-
 .filas {
   width: 100%;
   display: grid;
@@ -262,10 +250,6 @@ footer > h2 {
   footer > h2 {
     font-size: 64px;
   }
-
-  .datos p {
-    font-size: 25px;
-  }
 }
 
 @media (min-width: 1201px) {
@@ -294,9 +278,5 @@ footer > h2 {
 
   footer > h2 {
     font-size: 64px;
-  }
-
-  .datos p {
-    font-size: 25px;
   }
 }

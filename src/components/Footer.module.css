@@ -1,0 +1,17 @@
+.datos {
+  background-color: var(--color-prin);
+  padding: 10px 0px;
+}
+
+.datos p {
+  color: var(--color-font);
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .datos p {
+    font-size: 25px;
+  }
+}
